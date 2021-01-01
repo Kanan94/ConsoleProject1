@@ -9,7 +9,7 @@ namespace RestaurantManager.Models
     {
         public string No { get; set; }
         public string Name { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
         public  Category Category { get; set; }
 
         public MenuItem (string no, string name, int price, Category category)
