@@ -6,17 +6,23 @@ namespace RestaurantManager.Models
 {
     public class Order
     {
-        public string No { get; set; }
-       // List<OrderItems> OrderItems { get; set; }
-        public double TotalAmount { get; set; }
-        //public DateTime
+        private string _no;
+        private double _totalAmount;
+        private string _orderItems;
+        private int _dateTime;
 
-        public Order(string no, string orderItems, double totalAmount)
+
+        public string No { get { return _no; } }
+        List<OrderItem> OrderItems { get; set; }
+        public double TotalAmount { get { return _totalAmount;  } }
+        public DateTime Date { get; set; }
+
+        public Order(string no, string orderItems, double totalAmount, int datetime)
         {
-            this.No = no;
-            //this.OrderItems = orderItems;
-            this.TotalAmount = totalAmount;
-            //this.Date = date;
+            this._no = no;
+            this._orderItems = orderItems;
+            this._totalAmount = totalAmount;
+            this._dateTime = datetime;
 
 
         }

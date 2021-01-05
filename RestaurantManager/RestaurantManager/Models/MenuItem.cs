@@ -3,49 +3,66 @@ using System.Collections.Generic;
 using System.Text;
 using RestaurantManager.Enums;
 
+
 namespace RestaurantManager.Models
 {
-   public class MenuItem
+    public class MenuItem
     {
         private string _no;
         private string _name;
         private double _price;
-        
+
 
         public string No { get { return _no; } }
         public string Name { get; set; }
         public double Price
         {
             get
-            { return _price;
+            {
+                return _price;
             }
             set
             {
                 if (value < 0)
                 {
-                    throw new MenuModelInvalidException("Price", "Price can not be less than zero!");
+                    throw new MenuModelInvalidException("Price", "Qiymet 0-dan az ola bilmez!");
                 }
 
                 else
                 {
                     _price = value;
                 }
-                }
             }
         }
 
-        public  Category Category { get; set; }
+
+        public Category Category { get; set; }
+        private static int MenuItemMainCount { get; set; } = 500;
+        private static int MenuItemSoupCounT { get; set; } = 500;
+        private static int MenuItemDrinkCount { get; set; } = 500;
+        private static int MenuItemDessertCount { get; set; } = 500;
+
+        private static string MenuItemMainName { get; set; } = "MA";
+        private static string MenuItemSoupName { get; set; } = "SO";
+        private static string MenuItemDrinkName { get; set; } = "DR";
+        private static string MenuItemMDessertName { get; set; } = "DE";
 
 
 
 
-    //public MenuItem(string no, string name, int price, Category category)
-    //{
-    //    //this.No = no;
-    //    //this.Name = name;
-    //    //this.Price = price;
-    //    this.Category = category;
-    //}
+
+        public MenuItem(string no, string name, double price, Category category)
+        {
+            this._no = no;
+            this.Name = name;
+            this.Price = price;
+            this.Category = category;
+        }
+    }
 }
+
+
+
+
 
 

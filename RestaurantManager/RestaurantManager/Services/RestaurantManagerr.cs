@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 using RestaurantManager.Enums;
-using RestaurantManager.Interfaces;
+using RestaurantManager2.Interfaces;
 using RestaurantManager.Models;
 
 namespace RestaurantManager.Services
 {
     class RestaurantManagerr
     {
-        public class RestaurantManager : IRestaurantManager
+        public class RestaurantManager: IRestaurantManager2
         {
             public List<MenuItem> MenuItems { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
             public List<Order> Orders { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+            MenuItem IRestaurantManager2.MenuItems { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
             public RestaurantManager()
             {
                 MenuItems = new List<MenuItem>();
@@ -21,7 +23,11 @@ namespace RestaurantManager.Services
 
             public void AddMenuItem(string name, int price, Category category)
             {
-                throw new NotImplementedException();
+                string nameStr = name.Trim().ToLower();
+                if (MenuItems.Exists(i => i.Name.Trim().ToLower() == nameStr))
+                {
+                    throw new MenuModelInvalidException("Name", "Menyu itemleri movcuddur!");
+                }
             }
            
 
@@ -29,7 +35,6 @@ namespace RestaurantManager.Services
             {
                 throw new NotImplementedException();
             }
-
             public void EditMenuItem(string name, double price, string no)
             {
                 throw new NotImplementedException();
@@ -92,6 +97,11 @@ namespace RestaurantManager.Services
             }
 
             public void RemoveOrder(int orderNo)
+            {
+                throw new NotImplementedException();
+            }
+
+            public List<MenuItem> GetMenuItemsSearch()
             {
                 throw new NotImplementedException();
             }
