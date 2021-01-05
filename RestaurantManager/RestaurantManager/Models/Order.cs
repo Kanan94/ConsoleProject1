@@ -7,7 +7,7 @@ namespace RestaurantManager.Models
     public class Order
     {
         public string No { get; set; }
-        List<OrderItems> OrderItems { get; set; }
+       // List<OrderItems> OrderItems { get; set; }
         public double TotalAmount { get; set; }
         //public DateTime
 

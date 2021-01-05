@@ -1,0 +1,4 @@
+C:\Users\Code\Desktop\RestaurantManager\RestaurantManager\obj\Debug\netcoreapp2.2\RestaurantManager.csprojAssemblyReference.cache
+C:\Users\Code\Desktop\RestaurantManager\RestaurantManager\obj\Debug\netcoreapp2.2\RestaurantManager.csproj.CoreCompileInputs.cache
+C:\Users\Code\Desktop\RestaurantManager\RestaurantManager\obj\Debug\netcoreapp2.2\RestaurantManager.AssemblyInfoInputs.cache
+C:\Users\Code\Desktop\RestaurantManager\RestaurantManager\obj\Debug\netcoreapp2.2\RestaurantManager.AssemblyInfo.cs
