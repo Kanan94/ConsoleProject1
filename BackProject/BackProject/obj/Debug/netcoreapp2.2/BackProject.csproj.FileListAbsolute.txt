@@ -1,0 +1,11 @@
+C:\Users\Code\Desktop\BackProject\BackProject\bin\Debug\netcoreapp2.2\BackProject.deps.json
+C:\Users\Code\Desktop\BackProject\BackProject\bin\Debug\netcoreapp2.2\BackProject.runtimeconfig.json
+C:\Users\Code\Desktop\BackProject\BackProject\bin\Debug\netcoreapp2.2\BackProject.runtimeconfig.dev.json
+C:\Users\Code\Desktop\BackProject\BackProject\bin\Debug\netcoreapp2.2\BackProject.dll
+C:\Users\Code\Desktop\BackProject\BackProject\bin\Debug\netcoreapp2.2\BackProject.pdb
+C:\Users\Code\Desktop\BackProject\BackProject\obj\Debug\netcoreapp2.2\BackProject.csprojAssemblyReference.cache
+C:\Users\Code\Desktop\BackProject\BackProject\obj\Debug\netcoreapp2.2\BackProject.csproj.CoreCompileInputs.cache
+C:\Users\Code\Desktop\BackProject\BackProject\obj\Debug\netcoreapp2.2\BackProject.AssemblyInfoInputs.cache
+C:\Users\Code\Desktop\BackProject\BackProject\obj\Debug\netcoreapp2.2\BackProject.AssemblyInfo.cs
+C:\Users\Code\Desktop\BackProject\BackProject\obj\Debug\netcoreapp2.2\BackProject.dll
+C:\Users\Code\Desktop\BackProject\BackProject\obj\Debug\netcoreapp2.2\BackProject.pdb
